@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/BEBAS___-webfont.eot');
+    src: url('../fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BEBAS___-webfont.woff') format('woff'),
+    url('../fonts/BEBAS___-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'st_mariethin';
+    src: url('../fonts/StMarie-Thin-webfont.eot');
+    src: url('../fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/StMarie-Thin-webfont.woff') format('woff'),
+    url('../fonts/StMarie-Thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.woff') format('woff'),
+    url('../fonts/Calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.woff2') format('woff2'),
+    url('../fonts/calibri.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('../fonts/Calibri-Light.woff') format('woff'),
+    url('../fonts/Calibri-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('../fonts/calibril.eot');
+    src: url('../fonts/calibril.woff2') format('woff2'),
+    url('../fonts/calibril.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Reset CSS end*/
+
+/*Common styles*/
+
+html {
+    font-size: 15px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+main {
+    margin-top: 127px;
+    min-height: calc(100vh - 83px - 127px);
+    background: #ffffff;
+}
+
+h2 {
+    color: #ffac00;
+    font-family: st_mariethin;
+    font-size: 2.6667rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*Common styles end*/
+
+/*Header*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+}
+
+h1 {
+    font-family: bebasregular;
+    font-size: 2.4667rem;
+    color: #6e6d6b;
+    float: left;
+    text-align: center;
+    margin: 10px 0 28px;
+}
+
+h1 span {
+    font-family: Calibri;
+    color: #fb9c06;
+    line-height: 3.4667rem;
+}
+
+.logo {
+    display: inline-block;
+    width: 6rem;
+    height: 7rem;
+    background: url("../images/rabbit.png") no-repeat center center;
+    background-size: contain;
+    margin: 5px 50px 17px 15px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #9e9b9b;
+    font-family: Calibri;
+    font-size: 1.4667rem;
+    margin: 10px 34px 28px;
+}
+
+nav a:last-child {
+    margin: 10px 10px 25px 40px;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 3.6667rem;
+    width: 3.6667rem;
+    margin-bottom: 12px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+}
+
+nav a:nth-child(1)::before {
+    background-position: 3px 7px;
+}
+
+nav a:nth-child(2)::before {
+    background-position: -121px 7px;
+}
+
+nav a:nth-child(3)::before {
+    background-position: -245px 7px;
+}
+
+nav a:nth-child(4)::before {
+    background-position: -367px 7px;
+}
+
+nav a:nth-child(5)::before {
+    background-position: -505px 7px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    color: #fb9c06;
+}
+
+/*Header end*/
+
+/*Section slider*/
+
+.slider {
+    border-bottom: 5px solid #fb9c06;
+    border-top: 5px solid #fb9c06;
+    background: url(../images/big-orange-bg.jpg);
+    background-size: cover;
+}
+
+.slider .black {
+    font-family: bebasregular;
+    font-size: 2.4667rem;
+    color: #fb9c06;
+    text-align: center;
+    background: #4b4f4f;
+    margin: 130px 0 27px 17px;
+    float: left;
+    padding: 15px 25px 15px 30px;
+}
+
+.slider .orange {
+    font-family: bebasregular;
+    font-size: 2.4667rem;
+    color: #6e6d6b;
+    text-align: center;
+    background: #fec759;
+    margin: 0 0 100px 8px;
+    float: left;
+    clear: left;
+    padding: 15px 30px 23px;
+}
+
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Section slider end*/
+
+/*Section with textareas*/
+
+.textareas .wrapper div {
+    display: inline-block;
+    padding: 27px 18px;
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Calibri;
+    line-height: 1.55rem;
+    vertical-align: top;
+}
+
+.textareas div a {
+    float: right;
+    clear: both;
+    text-decoration: none;
+    font-family: "Calibri Light";
+    font-size: 1.1333rem;
+    font-style: italic;
+    color: #ffac00;
+    padding: 0 5px;
+    transition: all 0.2s ease;
+}
+
+.textareas::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to bottom, #f2f2f2 0%, #fefefe 100%);
+}
+
+.textareas div a:hover {
+    font-size: 1.6667rem;
+}
+
+/*Section with textareas end*/
+
+/*Section Team*/
+
+.team h2 {
+    margin: 20px 0 0;
+}
+
+.team figure {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.team h3 {
+    font-family: "Calibri Light";
+    font-size: 1.4667rem;
+    text-align: center;
+    color: #6e6d6b;
+    margin-top: 40px;
+}
+
+.team h3 span {
+    color: #fcaa43;
+}
+
+.team img {
+    width: 284px;
+    height: 284px;
+    border-radius: 50%;
+    border: 8px solid #ffb540;
+    margin: 35px 0 30px;
+}
+
+.team figcaption {
+    width: 300px;
+    padding: 0 30px;
+    line-height: 1.5333rem;
+    box-sizing: border-box;
+    font-family: "Calibri Light";
+    font-size: 1rem;
+}
+
+.team figure:nth-child(3n) {
+    margin: 0 140px 0 160px;
+}
+
+/*Section Team end*/
+
+/*Section Contacts*/
+
+.contact h2 {
+    margin: 45px 0 70px;
+}
+
+.contact form fieldset {
+    margin-bottom: 40px;
+}
+
+.contact form fieldset:nth-child(3) {
+    margin-bottom: 25px;
+}
+
+.contact label {
+    font-family: st_mariethin;
+    font-size: 1.6rem;
+    color: #fcb544;
+}
+
+.contact form fieldset input,
+.contact form fieldset textarea {
+    width: 89%;
+    font-family: st_mariethin;
+    font-size: 1.3333rem;
+    float: right;
+    border-left: 5px solid #d2d0cf;
+    border-top: 2px solid #d2d0cf;
+    background: #f8f7f6;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.contact form fieldset textarea {
+    height: 5.3333rem;
+}
+
+.contact fieldset::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact .submit {
+    font-size: 2rem;
+    font-family: st_mariethin;
+    float: right;
+    color: #ffffff;
+    background-color: #fb9c06;
+    border: 1px solid #f6bb5c;
+    padding: 0 35px 5px;
+    margin: 0 35px 55px;
+    box-shadow: 0 3px 0 #cc830f;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact form fieldset input:focus,
+.contact form fieldset textarea:focus {
+    border-left: 5px solid #fb9c06;
+    outline: 2px solid #fb9c06;
+}
+
+.contact .submit:hover {
+    box-shadow: 0 0 #cc830f;
+    top: 3px;
+}
+
+/*Section Contacts end*/
+
+/*Footer*/
+
+footer{
+    background: #fb9c06;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8920a;
+    box-shadow: 0 3px 0 #cc830f;
+}
+
+footer p {
+    font-family: st_mariethin;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding: 18px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*Footer end*/
